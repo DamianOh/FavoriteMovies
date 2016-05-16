@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50B1A5301CE98CE900390BE2 /* TV_Shows_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1A52F1CE98CE900390BE2 /* TV_Shows_VC.swift */; };
+		50B1A5321CE98CFF00390BE2 /* Movies_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1A5311CE98CFF00390BE2 /* Movies_VC.swift */; };
+		50B1A5381CE98D9700390BE2 /* Search_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1A5371CE98D9700390BE2 /* Search_VC.swift */; };
 		50E75A6B1CE636B800D93848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E75A6A1CE636B800D93848 /* AppDelegate.swift */; };
-		50E75A6D1CE636B800D93848 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E75A6C1CE636B800D93848 /* ViewController.swift */; };
 		50E75A701CE636B800D93848 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E75A6E1CE636B800D93848 /* Main.storyboard */; };
 		50E75A731CE636B800D93848 /* FavoriteMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50E75A711CE636B800D93848 /* FavoriteMovies.xcdatamodeld */; };
 		50E75A751CE636B800D93848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E75A741CE636B800D93848 /* Assets.xcassets */; };
@@ -35,9 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50B1A52F1CE98CE900390BE2 /* TV_Shows_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TV_Shows_VC.swift; sourceTree = "<group>"; };
+		50B1A5311CE98CFF00390BE2 /* Movies_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies_VC.swift; sourceTree = "<group>"; };
+		50B1A5371CE98D9700390BE2 /* Search_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search_VC.swift; sourceTree = "<group>"; };
 		50E75A671CE636B800D93848 /* FavoriteMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E75A6A1CE636B800D93848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		50E75A6C1CE636B800D93848 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		50E75A6F1CE636B800D93848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50E75A721CE636B800D93848 /* FavoriteMovies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoriteMovies.xcdatamodel; sourceTree = "<group>"; };
 		50E75A741CE636B800D93848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +80,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50B1A5331CE98D0E00390BE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50E75A711CE636B800D93848 /* FavoriteMovies.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		50B1A5341CE98D1600390BE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50E75A761CE636B800D93848 /* LaunchScreen.storyboard */,
+				50E75A6E1CE636B800D93848 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		50B1A5351CE98D1D00390BE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50B1A52F1CE98CE900390BE2 /* TV_Shows_VC.swift */,
+				50B1A5311CE98CFF00390BE2 /* Movies_VC.swift */,
+				50B1A5371CE98D9700390BE2 /* Search_VC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		50B1A5361CE98D3C00390BE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50E75A741CE636B800D93848 /* Assets.xcassets */,
+				50E75A6A1CE636B800D93848 /* AppDelegate.swift */,
+				50E75A791CE636B800D93848 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		50E75A5E1CE636B800D93848 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +140,10 @@
 		50E75A691CE636B800D93848 /* FavoriteMovies */ = {
 			isa = PBXGroup;
 			children = (
-				50E75A6A1CE636B800D93848 /* AppDelegate.swift */,
-				50E75A6C1CE636B800D93848 /* ViewController.swift */,
-				50E75A6E1CE636B800D93848 /* Main.storyboard */,
-				50E75A741CE636B800D93848 /* Assets.xcassets */,
-				50E75A761CE636B800D93848 /* LaunchScreen.storyboard */,
-				50E75A791CE636B800D93848 /* Info.plist */,
-				50E75A711CE636B800D93848 /* FavoriteMovies.xcdatamodeld */,
+				50B1A5331CE98D0E00390BE2 /* Model */,
+				50B1A5341CE98D1600390BE2 /* View */,
+				50B1A5351CE98D1D00390BE2 /* Controller */,
+				50B1A5361CE98D3C00390BE2 /* Supporting Files */,
 			);
 			path = FavoriteMovies;
 			sourceTree = "<group>";
@@ -259,8 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B1A5301CE98CE900390BE2 /* TV_Shows_VC.swift in Sources */,
+				50B1A5381CE98D9700390BE2 /* Search_VC.swift in Sources */,
+				50B1A5321CE98CFF00390BE2 /* Movies_VC.swift in Sources */,
 				50E75A731CE636B800D93848 /* FavoriteMovies.xcdatamodeld in Sources */,
-				50E75A6D1CE636B800D93848 /* ViewController.swift in Sources */,
 				50E75A6B1CE636B800D93848 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +530,7 @@
 				50E75A941CE636B800D93848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50E75A951CE636B800D93848 /* Build configuration list for PBXNativeTarget "FavoriteMoviesTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +539,7 @@
 				50E75A971CE636B800D93848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50E75A981CE636B800D93848 /* Build configuration list for PBXNativeTarget "FavoriteMoviesUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +548,7 @@
 				50E75A9A1CE636B800D93848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

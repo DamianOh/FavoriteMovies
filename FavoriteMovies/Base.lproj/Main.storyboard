@@ -94,7 +94,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qbq-CE-b2z">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShowsCell" id="qbq-CE-b2z" customClass="ShowsCell" customModule="FavoriteMovies" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="64" width="150" height="275"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -104,15 +104,12 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RuZ-N8-IB9">
                                             <rect key="frame" x="8" y="8" width="134" height="202"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrD-ZP-0Gx">
-                                            <rect key="frame" x="8" y="214" width="134" height="33"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <outlet property="ShowPoster" destination="RuZ-N8-IB9" id="Rgs-Jp-Vvf"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -154,21 +151,36 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fdF-xc-7Zq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gag-y7-qFx">
-                            <size key="itemSize" width="224" height="175"/>
+                            <size key="itemSize" width="130" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="5" minY="5" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tkA-Aq-xJN">
-                                <rect key="frame" x="0.0" y="64" width="224" height="175"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCell" id="tkA-Aq-xJN" customClass="MoviesCell" customModule="FavoriteMovies" customModuleProvider="target">
+                                <rect key="frame" x="5" y="69" width="130" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="224" height="175"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="130" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="static" translatesAutoresizingMaskIntoConstraints="NO" id="x5K-pg-oAj">
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="200"/>
+                                        </imageView>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="x5K-pg-oAj" secondAttribute="trailing" id="PMt-O5-cKE"/>
+                                    <constraint firstItem="x5K-pg-oAj" firstAttribute="top" secondItem="tkA-Aq-xJN" secondAttribute="top" id="VwW-5Y-pOM"/>
+                                    <constraint firstAttribute="bottom" secondItem="x5K-pg-oAj" secondAttribute="bottom" id="gd5-Bm-QsS"/>
+                                    <constraint firstItem="x5K-pg-oAj" firstAttribute="leading" secondItem="tkA-Aq-xJN" secondAttribute="leading" id="hFm-lA-2M1"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="MoviePoster" destination="x5K-pg-oAj" id="bAJ-fx-3AJ"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -185,4 +197,7 @@
             <point key="canvasLocation" x="1899" y="1113"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="static" width="1080" height="1080"/>
+    </resources>
 </document>

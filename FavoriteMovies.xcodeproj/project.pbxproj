@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		50B1A5301CE98CE900390BE2 /* TV_Shows_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1A52F1CE98CE900390BE2 /* TV_Shows_VC.swift */; };
 		50B1A5321CE98CFF00390BE2 /* Movies_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1A5311CE98CFF00390BE2 /* Movies_VC.swift */; };
-		50B1A5381CE98D9700390BE2 /* Search_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1A5371CE98D9700390BE2 /* Search_VC.swift */; };
+		50B1A53C1CE9911200390BE2 /* Search_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1A53B1CE9911200390BE2 /* Search_VC.swift */; };
+		50B1A5401CEB6A6200390BE2 /* ShowsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1A53F1CEB6A6200390BE2 /* ShowsCell.swift */; };
+		50B1A5421CEB6B1A00390BE2 /* MoviesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1A5411CEB6B1A00390BE2 /* MoviesCell.swift */; };
 		50E75A6B1CE636B800D93848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E75A6A1CE636B800D93848 /* AppDelegate.swift */; };
 		50E75A701CE636B800D93848 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E75A6E1CE636B800D93848 /* Main.storyboard */; };
 		50E75A731CE636B800D93848 /* FavoriteMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50E75A711CE636B800D93848 /* FavoriteMovies.xcdatamodeld */; };
@@ -39,7 +41,9 @@
 /* Begin PBXFileReference section */
 		50B1A52F1CE98CE900390BE2 /* TV_Shows_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TV_Shows_VC.swift; sourceTree = "<group>"; };
 		50B1A5311CE98CFF00390BE2 /* Movies_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies_VC.swift; sourceTree = "<group>"; };
-		50B1A5371CE98D9700390BE2 /* Search_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search_VC.swift; sourceTree = "<group>"; };
+		50B1A53B1CE9911200390BE2 /* Search_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search_VC.swift; sourceTree = "<group>"; };
+		50B1A53F1CEB6A6200390BE2 /* ShowsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowsCell.swift; sourceTree = "<group>"; };
+		50B1A5411CEB6B1A00390BE2 /* MoviesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesCell.swift; sourceTree = "<group>"; };
 		50E75A671CE636B800D93848 /* FavoriteMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E75A6A1CE636B800D93848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50E75A6F1CE636B800D93848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,8 +95,10 @@
 		50B1A5341CE98D1600390BE2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				50B1A5411CEB6B1A00390BE2 /* MoviesCell.swift */,
 				50E75A761CE636B800D93848 /* LaunchScreen.storyboard */,
 				50E75A6E1CE636B800D93848 /* Main.storyboard */,
+				50B1A53F1CEB6A6200390BE2 /* ShowsCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -102,7 +108,7 @@
 			children = (
 				50B1A52F1CE98CE900390BE2 /* TV_Shows_VC.swift */,
 				50B1A5311CE98CFF00390BE2 /* Movies_VC.swift */,
-				50B1A5371CE98D9700390BE2 /* Search_VC.swift */,
+				50B1A53B1CE9911200390BE2 /* Search_VC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -298,8 +304,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				50B1A5301CE98CE900390BE2 /* TV_Shows_VC.swift in Sources */,
-				50B1A5381CE98D9700390BE2 /* Search_VC.swift in Sources */,
+				50B1A53C1CE9911200390BE2 /* Search_VC.swift in Sources */,
 				50B1A5321CE98CFF00390BE2 /* Movies_VC.swift in Sources */,
+				50B1A5401CEB6A6200390BE2 /* ShowsCell.swift in Sources */,
+				50B1A5421CEB6B1A00390BE2 /* MoviesCell.swift in Sources */,
 				50E75A731CE636B800D93848 /* FavoriteMovies.xcdatamodeld in Sources */,
 				50E75A6B1CE636B800D93848 /* AppDelegate.swift in Sources */,
 			);
